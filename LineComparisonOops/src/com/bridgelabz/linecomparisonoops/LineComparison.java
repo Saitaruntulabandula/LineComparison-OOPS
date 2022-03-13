@@ -17,6 +17,12 @@ public class LineComparison {
         double length = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
         return length;
     }
+	static void check_Equality(Double lineLength1,Double lineLength2) {
+		if(lineLength1.equals(lineLength2)) {
+			System.out.println("Both the lines are equal");
+		}else
+			System.out.println("Both the lines are not equal");
+	}
 	static void compare_Lines(Double lineLength1, Double lineLength2) {
 		int value = lineLength1.compareTo(lineLength2);
 		
