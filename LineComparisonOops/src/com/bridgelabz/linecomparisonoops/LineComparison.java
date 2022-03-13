@@ -17,10 +17,15 @@ public class LineComparison {
         double length = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
         return length;
     }
-	static void check_Equality(Double lineLength1,Double lineLength2) {
-		if(lineLength1.equals(lineLength2)) {
-			System.out.println("Both the lines are equal");
-		}else
-			System.out.println("Both the lines are not equal");
+	static void compare_Lines(Double lineLength1, Double lineLength2) {
+		int value = lineLength1.compareTo(lineLength2);
+		
+		if(value<0) {
+			System.out.println("Line one is Smaller then Line two");
+		}else if(value>0) {
+			System.out.println("Line one is Larger then Line two");
+		}else {
+			System.out.println("Both Lines are equal");
+		}
 	}
 }
