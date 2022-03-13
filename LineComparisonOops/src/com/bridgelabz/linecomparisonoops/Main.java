@@ -9,6 +9,7 @@ public class Main {
 		LineComparison line2 = new LineComparison(16,5,7,56);
 		double lineLength2 = line2.calculate_length();
 		System.out.println("Length of the line2 is:  "+lineLength2);
+		LineComparison.check_Equality(lineLength1, lineLength2);
 		LineComparison.compare_Lines(lineLength1, lineLength2);
 	}
 }
