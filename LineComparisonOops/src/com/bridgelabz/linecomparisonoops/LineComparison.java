@@ -23,4 +23,5 @@ public class LineComparison {
 		}else
 			System.out.println("Both the lines are not equal");
 	}
+	
 }
